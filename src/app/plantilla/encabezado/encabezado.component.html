@@ -1,0 +1,39 @@
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+        <div class="align-items-center d-none d-md-flex">
+            <i class="bi bi-clock"></i> Lunes - Viernes, 8AM a 6PM - Sábado, 8AM a 12M
+        </div>
+        <div class="d-flex align-items-center">
+            <i class="bi bi-phone"></i> Llámanos ahora al 310 396 5759
+        </div>
+    </div>
+</div>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <a href="index.html" class="logo me-auto" ><img src="assets/img/logo.png" alt=""></a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <!-- <li><a class="nav-link scrollto " href="#hero">Inicio</a></li> -->
+                <li><a class="nav-link scrollto" [routerLink]="['homePage/principal']">Inicio</a></li>
+                <li><a class="nav-link scrollto" [routerLink]="['homePage/sobreNosotros']">Sobre nosotros</a></li>
+                <li><a class="nav-link scrollto" [routerLink]="['homePage/productos-servicios']">Productos &
+                        Servicios</a></li>
+                <li><a class="nav-link scrollto" [routerLink]="['homePage/contactenos']">Contáctenos</a></li>
+                <li><a class="nav-link scrollto" [routerLink]="['homePage/login']">Ingresar</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+        <a routerLink="homePage/registrarse" class="appointment-btn scrollto"><span
+                class="d-none d-md-inline">Regístrate</span></a>
+
+    </div>
+</header>
+<!-- End Header -->

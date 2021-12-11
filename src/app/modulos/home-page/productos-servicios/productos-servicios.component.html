@@ -1,0 +1,48 @@
+<!-- ======= Services Section ======= -->
+<section id="services" class="services services">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Servicios</h2>
+            <p>Toda la atención y calidad humana de nuestros asesores a su servicio.</p>
+        </div>
+
+        <div class="row">
+            <ng-container *ngFor="let item of listaInmuebles">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/gallery/{{item.imagen}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <h4>{{item.tipo}}</h4>
+                        <h5>{{item.barrio}}</h5>
+                        <p> {{item.descripcion}}</p>
+                        <br>
+                        <h3>{{item.precio|currency}}</h3>
+                        <table>
+                            <tr>
+                                <th>Area</th>
+                                <th>Habs</th>
+                                <th>Baños</th>
+                                <th>Parq</th>
+                            </tr>
+                            <tr align="center">
+                                <td>{{item.area}} M²</td>
+                                <td>{{item.habitaciones}}</td>
+                                <td>{{item.banios}}</td>
+                                <td>{{item.parqueaderos}}</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </ng-container>
+
+
+
+
+
+        </div>
+
+    </div>
+</section>
+<!-- End Services Section -->
